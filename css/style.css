@@ -15,7 +15,7 @@ header {
   background-color: rgb(250, 250, 250);
   margin: 0 auto;
   border-radius: 4px;
-  width: 75%;
+  width: 55%;
   max-width: 900px;
   padding: 10px;
   padding-top: 20px;
@@ -43,7 +43,9 @@ header {
 #userAge {
   width: 40px;
 }
-
+#title{
+  background-color: #a9d7d1;
+}
 
 #submit {
   background-color: #59ace0;
@@ -120,4 +122,21 @@ form {
 
 div{
 	display: block;
+}
+label {
+  display: inline-block;
+  
+  text-align: right;
+}​
+
+input[type=radio]{
+  width: 15px;
+  height: 15px;
+  float: left;
+}
+input[type=checkbox]{
+  width: 15px;
+  height: 15px;
+  float: left;
+  text-align: left;
 }
