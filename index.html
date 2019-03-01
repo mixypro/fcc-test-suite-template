@@ -8,16 +8,18 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    
-    <form>
-      <label>*Name: </label>
-      <input type="text" name="name"> <br>
-      <label>*E-mail: </label>
-      <input type="text" name="email"> <br>
-      <label>*Age: </label>
-      <input type="text" name="age"> <br>
+     <h1 id="title">Survey Form</h1>
+     <div>
+     	<p id="description">Let us know how we can improve freeCodeCamp </p>
+    <form id="survey-form">
+      <label id="name-label">*Name: </label>
+      <input type="text" name="name" id="name" placeholder="Enter Name" required> <br>
+      <label id="email-label">*E-mail: </label>
+      <input type="email" name="email" id="email" placeholder="Enter your Email" required> <br>
+      <label id="number-label">*Age: </label>
+      <input type="number" name="age" id="number" min="1" max="100" placeholder="Enter your age in years" required> <br>
       <label>Which option best describes your current role?   </label>
-      <select> 
+      <select id="dropdown"> 
         <option>Select an option:</option>
         <option>Student</option>
         <option>Full time job</option>
@@ -26,11 +28,11 @@
         <option>Other</option>
       </select> <br>
       <label>How likely is that you would recommend freeCodeCamp to a friend?</label>
-      <input type="radio" value="definitely">Definitely <br>
-      <input type="radio" value="maybe">Maybe <br>
-      <input type="radio" value="notSure">Not sure <br>
+      <input type="radio" value="definitely" name="friend">Definitely <br>
+      <input type="radio" value="maybe" name="friend">Maybe <br>
+      <input type="radio" value="notSure" name="friend">Not sure <br>
       <label>What do you like most in FCC:</label>
-      <select>
+      <select id="dropdown">
         <option>Select an option</option>
         <option>Challenges</option>
         <option>Projects</option>
@@ -39,24 +41,24 @@
       </select> <br>
         <label>Things that should be improved in the future
 (Check all that apply):</label> <br>
-        <input type="checkbox" name="chckbox">Front-end Projects <br>
-        <input type="checkbox" name="chckbox">Back-end Projects <br>
-        <input type="checkbox" name="datavisualization">Data Visualization <br>
-        <input type="checkbox" name="chckbox">Challenges <br>
-        <input type="checkbox" name="chckbox">Open source Community <br>
-        <input type="checkbox" name="gitlerhelprooms">Gitler help rooms <br>
-        <input type="checkbox" name="chckbox">Videos <br>
-        <input type="checkbox" name="chckbox">City meetup <br>
-        <input type="checkbox" name="chckbox">Wiki <br>
-        <input type="checkbox" name="chckbox">Forum <br>
-        <input type="checkbox" name="chckbox">Additional Courses <br>
+        <input type="checkbox" name="chckbox" value="front end">Front-end Projects <br>
+        <input type="checkbox" name="chckbox" value="Back-end">Back-end Projects <br>
+        <input type="checkbox" name="chckbox" value="Data Visualization">Data Visualization <br>
+        <input type="checkbox" name="chckbox" value="Challenges">Challenges <br>
+        <input type="checkbox" name="chckbox" value="open source">Open source Community <br>
+        <input type="checkbox" name="gitlerhelprooms" value="Gitler">Gitler help rooms <br>
+        <input type="checkbox" name="chckbox" value="Videos">Videos <br>
+        <input type="checkbox" name="chckbox" value="City meetup">City meetup <br>
+        <input type="checkbox" name="chckbox" value="Wiki">Wiki <br>
+        <input type="checkbox" name="chckbox" value="Forum">Forum <br>
+        <input type="checkbox" name="chckbox" value="Additional Courses">Additional Courses <br>
         <label>Any Comments or Suggestions?</label>
         <textarea>Enter your comment here</textarea> <br>
-        <input type="Submit" name="Submit">
+        <input type="Submit" name="Submit"  id="submit">
       
 
     </form>
-
+    </div>
 
     <script  src="js/index.js"></script>
   </body>
